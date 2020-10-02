@@ -2,12 +2,11 @@
 <div class="container-fluid" style="margin-bottom: 100px;">
             <div class="row mt-4">
                 <div class="col">
-                    <h3 class="text-primary bold">Welcome Andrew</h3>
+                    <h3 class="text-primary bold">Welcome</h3>
                 </div>
               
                     
-                </div>
-            </div>
+            </div>           
             <div class="row mt-4 mb-2">
                 <div class="col">
                     <h5 class="bold">
@@ -31,7 +30,7 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <th scope="row" colspan="7" *ngIf="!(medicines?.length > 0)"> No reports data available yet</th>
+                            <th scope="row" colspan="7" *ngIf="!(medicines?.length > 0)"> No medicine data available yet</th>
                           </tr>
                           <tr  *ngFor="let report of reports;let i = index">
                             <th scope="row">#{{medicines.name}}</th>
@@ -46,34 +45,4 @@
                     </table>
                 </div>
             </div>
-            <div class="row mt-4 mb-2">
-                <div class="col">
-                    <h5 class="bold">
-                        ERM Approved Reports
-                    </h5>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <table class="table table-bordered border-light">
-                        <thead class="thead-light">
-                          <tr>
-                            <th scope="col" class="text-black-50 border-right-0">Report ID</th>
-                            <th scope="col" class="text-black-50 border-right-0 border-left-0">Report Title</th>
-                            <th scope="col" class="text-black-50 border-left-0 border-right-0 ">Client Name</th>
-                            <th scope="col" class="text-black-50 border-right-0 border-left-0">Created By</th>
-                            <th scope="col" class="text-black-50 border-right-0 border-left-0">Last Updated</th>
-                            <th scope="col" class="text-black-50 border-right-0 border-left-0">View/Continue</th>
-                            <th scope="col" class="text-black-50 border-left-0">Actions</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row" colspan="7"> No approved reports available yet</th>
-                          </tr>
-                          
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-          </div>
+</div>
