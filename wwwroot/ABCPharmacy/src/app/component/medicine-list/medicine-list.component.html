@@ -1,4 +1,4 @@
-<app-header></app-header>
+
 <div class="container-fluid" style="margin-bottom: 100px;">
             <div class="row mt-4">
                 <div class="col">
@@ -32,14 +32,13 @@
                           <tr>
                             <th scope="row" colspan="7" *ngIf="!(medicines?.length > 0)"> No medicine data available yet</th>
                           </tr>
-                          <tr  *ngFor="let report of reports;let i = index">
-                            <th scope="row">#{{medicines.name}}</th>
-                            <td>{{report.brand}}</td>
-                            <td>{{report.price}}</td>
-                            <td>{{report.quantity}}</td>
-                            <td>{{report.expiry | date:'medium'}} </td>
-                            <td><a href="" class="text-primary">View</a></td>
-                            <td>...</td>
+                          <tr  *ngFor="let medicine of medicines;let i = index">
+                            <th scope="row">{{medicine.name}}</th>
+                            <td>{{medicine.brand}}</td>
+                            <td>{{medicine.price}}</td>
+                            <td>{{medicine.quantity}}</td>
+                            <td>{{medicine.expiry | date:'medium'}} </td>
+                            <td><a href="" class="text-primary">View</a></td>                            
                           </tr>
                         </tbody>
                     </table>

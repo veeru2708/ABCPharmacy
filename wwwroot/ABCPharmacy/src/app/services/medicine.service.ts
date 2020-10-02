@@ -14,7 +14,7 @@ export class MedicineService {
 
   getMedicines(): Observable<IMedicine[]>
       {
-          return this.httpClient.get<IMedicine[]>("https://localhost:44329/" + "/api/Medicine/Get");
+          return this.httpClient.get<IMedicine[]>("https://localhost:44329/" + "api/Medicine/Get");
          
       }
   
