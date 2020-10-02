@@ -46,7 +46,7 @@ namespace ABCPharmacy.API.Controllers
                 return BadRequest();
         }
 
-        [HttpGet("id")]
+        [HttpPost]
         public async Task<IActionResult> Add(MedicineDomain medicine)
         {
             var result = await _medicineService.AddMedicine(medicine);

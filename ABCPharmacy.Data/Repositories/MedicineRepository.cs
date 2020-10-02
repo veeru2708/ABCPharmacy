@@ -83,10 +83,10 @@ namespace ABCPharmacy.Data.Repositories
             try
             {
                 var med = _dbContext.Medicines.FirstOrDefault(med => med.Id == medicine.Id);
-                med.Name = med.Name;
-                med.Notes = med.Notes;
-                med.Quantity = med.Quantity;
-                med.Expiry = med.Expiry;
+                med.Name = medicine.Name;
+                med.Notes = medicine.Notes;
+                med.Quantity = medicine.Quantity;
+                med.Expiry = medicine.Expiry;
                 _dbContext.Medicines.Update(med);
                 _dbContext.SaveChanges();
             }
