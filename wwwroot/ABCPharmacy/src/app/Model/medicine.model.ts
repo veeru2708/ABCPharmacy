@@ -13,6 +13,5 @@ class Medicine implements IMedicine
     brand: string;
     price: number;
     quantity: number;
-    id: number;
-    Name: string;
+    id: number;    
 }
